@@ -1,0 +1,5 @@
+$font-color:  #321187;
+$font-size : 16px;
+@for $var from 1 through 5 {
+    $text:$var+2;
+};

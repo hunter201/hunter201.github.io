@@ -1,0 +1,153 @@
+@import "vars";
+
+.header {
+	position: relative;
+	.header__row {
+		position: fixed;
+		top: 0px;
+		left: 380px;
+		opacity: 0.7;
+		z-index: 100;
+	}
+
+	.header__left__part {
+		background-color: rgb(134, 73, 190);
+		height: 80px;
+		text-align: center;
+		h1 {
+			text-transform: uppercase;
+			margin: 0px;
+		}
+	}
+	.header__middle__part {
+		background-color: #ccc;
+		.center-text {
+			color: $font-color;
+		}
+	}
+	.header__right__part {
+		background-color: #77f;
+		height: 80px;
+		text-align: justify;
+		word-spacing: 100px;
+		span {
+			display: flex;
+			a {
+				color: whitesmoke;
+				text-decoration: none;
+				&:hover {
+					font-size: large;
+				}
+			}
+		}
+	}
+	.menu {
+		background-color: rgb(156, 121, 121);
+		height: 40px;
+	}
+}
+
+.main {
+	.main__content {
+		//padding: 15px;
+		top: 130px;
+		min-height: 2000px;
+		background-color: rgb(252, 252, 252);
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-content: start;
+		.card-z {
+			height: 400px;
+			width: 250px;
+			position: relative;
+			perspective: 1000px;
+			
+			margin-top: 20px;
+			// flex-direction: column;
+			// display: flex;
+
+			.card-z-front,
+			.card-z-back {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: 1s;
+				backface-visibility: hidden;
+				border-radius: 10px;
+				box-shadow: 5px 3px 3px black;
+			}
+			.card-z-front {
+				background-color: rgb(49, 42, 42);
+				color: rgb(223, 223, 223);
+				flex-direction: column;
+				display: flex;
+				justify-content: space-between;
+				.card-z-front-header {
+					h3 {
+						margin: 0;
+					}
+					position: absolute;
+					left: 10px;
+					top: 75px;
+					width: 100%;
+					height: 30px;
+					
+				}
+				.card-z-front-text {
+					p {
+						margin: 0px;
+						text-align: justify;
+						word-wrap: break-word;
+						margin: 0px 5px;
+						
+					}
+					position: absolute;
+					width: 100%;
+					height: 190px;
+					overflow-y: scroll;
+					top: 110px;
+				}
+				.card-z-front-img img {
+					width: 100%;
+					height: 72px;
+					margin-bottom: 10px;
+					border-radius: 10px 10px 0px 0px;
+				}
+				.card-z-front-btn {
+					margin-bottom: 10px;
+				}
+			}
+			.card-z-back {
+				background-color: rgb(48, 6, 6);
+				color: #ffffff;
+				transform: rotateY(180deg);
+			}
+			// &:hover .card-z-front {
+			// 	transform: rotateY(180deg);
+			// }
+			// &:hover .card-z-back {
+			// 	transform: rotateY(360deg);
+			// }
+		}
+
+		.table {
+			border: 3px solid black;
+			margin-top: 20px;
+			tr {
+				border-bottom: 1px double black;
+			}
+			td {
+				border-right: 2px dotted black;
+				text-align: center;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

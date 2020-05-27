@@ -1,0 +1,159 @@
+/* line 3, ../sass/main.scss */
+.header {
+  position: relative;
+}
+/* line 5, ../sass/main.scss */
+.header .header__row {
+  position: fixed;
+  top: 0px;
+  left: 380px;
+  opacity: 0.7;
+  z-index: 100;
+}
+/* line 13, ../sass/main.scss */
+.header .header__left__part {
+  background-color: #8649be;
+  height: 80px;
+  text-align: center;
+}
+/* line 17, ../sass/main.scss */
+.header .header__left__part h1 {
+  text-transform: uppercase;
+  margin: 0px;
+}
+/* line 22, ../sass/main.scss */
+.header .header__middle__part {
+  background-color: #ccc;
+}
+/* line 24, ../sass/main.scss */
+.header .header__middle__part .center-text {
+  color: #321187;
+}
+/* line 28, ../sass/main.scss */
+.header .header__right__part {
+  background-color: #77f;
+  height: 80px;
+  text-align: justify;
+  word-spacing: 100px;
+}
+/* line 33, ../sass/main.scss */
+.header .header__right__part span {
+  display: flex;
+}
+/* line 35, ../sass/main.scss */
+.header .header__right__part span a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+/* line 38, ../sass/main.scss */
+.header .header__right__part span a:hover {
+  font-size: large;
+}
+/* line 44, ../sass/main.scss */
+.header .menu {
+  background-color: #9c7979;
+  height: 40px;
+}
+
+/* line 51, ../sass/main.scss */
+.main .main__content {
+  top: 130px;
+  min-height: 2000px;
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: start;
+}
+/* line 60, ../sass/main.scss */
+.main .main__content .card-z {
+  height: 400px;
+  width: 250px;
+  position: relative;
+  perspective: 1000px;
+  margin-top: 20px;
+}
+/* line 70, ../sass/main.scss */
+.main .main__content .card-z .card-z-front,
+.main .main__content .card-z .card-z-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 3px 3px black;
+}
+/* line 85, ../sass/main.scss */
+.main .main__content .card-z .card-z-front {
+  background-color: #312a2a;
+  color: #dfdfdf;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 91, ../sass/main.scss */
+.main .main__content .card-z .card-z-front .card-z-front-header {
+  position: absolute;
+  left: 10px;
+  top: 75px;
+  width: 100%;
+  height: 30px;
+}
+/* line 92, ../sass/main.scss */
+.main .main__content .card-z .card-z-front .card-z-front-header h3 {
+  margin: 0;
+}
+/* line 102, ../sass/main.scss */
+.main .main__content .card-z .card-z-front .card-z-front-text {
+  position: absolute;
+  width: 100%;
+  height: 190px;
+  overflow-y: scroll;
+  top: 110px;
+}
+/* line 103, ../sass/main.scss */
+.main .main__content .card-z .card-z-front .card-z-front-text p {
+  margin: 0px;
+  text-align: justify;
+  word-wrap: break-word;
+  margin: 0px 5px;
+}
+/* line 116, ../sass/main.scss */
+.main .main__content .card-z .card-z-front .card-z-front-img img {
+  width: 100%;
+  height: 72px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+/* line 122, ../sass/main.scss */
+.main .main__content .card-z .card-z-front .card-z-front-btn {
+  margin-bottom: 10px;
+}
+/* line 126, ../sass/main.scss */
+.main .main__content .card-z .card-z-back {
+  background-color: #300606;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+/* line 139, ../sass/main.scss */
+.main .main__content .table {
+  border: 3px solid black;
+  margin-top: 20px;
+}
+/* line 142, ../sass/main.scss */
+.main .main__content .table tr {
+  border-bottom: 1px double black;
+}
+/* line 145, ../sass/main.scss */
+.main .main__content .table td {
+  border-right: 2px dotted black;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
